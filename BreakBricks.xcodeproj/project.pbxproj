@@ -1,0 +1,530 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BC6A84B81C3C683500CB8887 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BC6A84B71C3C683500CB8887 /* main.m */; };
+		BC6A84BB1C3C683500CB8887 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BC6A84BA1C3C683500CB8887 /* AppDelegate.m */; };
+		BC6A84BD1C3C683500CB8887 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = BC6A84BC1C3C683500CB8887 /* art.scnassets */; };
+		BC6A84C01C3C683500CB8887 /* GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC6A84BF1C3C683500CB8887 /* GameViewController.m */; };
+		BC6A84C31C3C683500CB8887 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC6A84C11C3C683500CB8887 /* Main.storyboard */; };
+		BC6A84C51C3C683600CB8887 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC6A84C41C3C683600CB8887 /* Assets.xcassets */; };
+		BC6A84C81C3C683600CB8887 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC6A84C61C3C683600CB8887 /* LaunchScreen.storyboard */; };
+		BC6A84D31C3C683600CB8887 /* BreakBricksTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BC6A84D21C3C683600CB8887 /* BreakBricksTests.m */; };
+		BC6A84DE1C3C683700CB8887 /* BreakBricksUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = BC6A84DD1C3C683700CB8887 /* BreakBricksUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BC6A84CF1C3C683600CB8887 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BC6A84AB1C3C683400CB8887 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BC6A84B21C3C683500CB8887;
+			remoteInfo = BreakBricks;
+		};
+		BC6A84DA1C3C683600CB8887 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BC6A84AB1C3C683400CB8887 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BC6A84B21C3C683500CB8887;
+			remoteInfo = BreakBricks;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		BC6A84B31C3C683500CB8887 /* BreakBricks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BreakBricks.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC6A84B71C3C683500CB8887 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BC6A84B91C3C683500CB8887 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		BC6A84BA1C3C683500CB8887 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		BC6A84BC1C3C683500CB8887 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
+		BC6A84BE1C3C683500CB8887 /* GameViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameViewController.h; sourceTree = "<group>"; };
+		BC6A84BF1C3C683500CB8887 /* GameViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameViewController.m; sourceTree = "<group>"; };
+		BC6A84C21C3C683500CB8887 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BC6A84C41C3C683600CB8887 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BC6A84C71C3C683600CB8887 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BC6A84C91C3C683600CB8887 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BC6A84CE1C3C683600CB8887 /* BreakBricksTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BreakBricksTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC6A84D21C3C683600CB8887 /* BreakBricksTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BreakBricksTests.m; sourceTree = "<group>"; };
+		BC6A84D41C3C683600CB8887 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BC6A84D91C3C683600CB8887 /* BreakBricksUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BreakBricksUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC6A84DD1C3C683700CB8887 /* BreakBricksUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BreakBricksUITests.m; sourceTree = "<group>"; };
+		BC6A84DF1C3C683700CB8887 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BC6A84B01C3C683500CB8887 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC6A84CB1C3C683600CB8887 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC6A84D61C3C683600CB8887 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BC6A84AA1C3C683400CB8887 = {
+			isa = PBXGroup;
+			children = (
+				BC6A84B51C3C683500CB8887 /* BreakBricks */,
+				BC6A84D11C3C683600CB8887 /* BreakBricksTests */,
+				BC6A84DC1C3C683700CB8887 /* BreakBricksUITests */,
+				BC6A84B41C3C683500CB8887 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		BC6A84B41C3C683500CB8887 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BC6A84B31C3C683500CB8887 /* BreakBricks.app */,
+				BC6A84CE1C3C683600CB8887 /* BreakBricksTests.xctest */,
+				BC6A84D91C3C683600CB8887 /* BreakBricksUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BC6A84B51C3C683500CB8887 /* BreakBricks */ = {
+			isa = PBXGroup;
+			children = (
+				BC6A84B91C3C683500CB8887 /* AppDelegate.h */,
+				BC6A84BA1C3C683500CB8887 /* AppDelegate.m */,
+				BC6A84BC1C3C683500CB8887 /* art.scnassets */,
+				BC6A84BE1C3C683500CB8887 /* GameViewController.h */,
+				BC6A84BF1C3C683500CB8887 /* GameViewController.m */,
+				BC6A84C11C3C683500CB8887 /* Main.storyboard */,
+				BC6A84C41C3C683600CB8887 /* Assets.xcassets */,
+				BC6A84C61C3C683600CB8887 /* LaunchScreen.storyboard */,
+				BC6A84C91C3C683600CB8887 /* Info.plist */,
+				BC6A84B61C3C683500CB8887 /* Supporting Files */,
+			);
+			path = BreakBricks;
+			sourceTree = "<group>";
+		};
+		BC6A84B61C3C683500CB8887 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BC6A84B71C3C683500CB8887 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BC6A84D11C3C683600CB8887 /* BreakBricksTests */ = {
+			isa = PBXGroup;
+			children = (
+				BC6A84D21C3C683600CB8887 /* BreakBricksTests.m */,
+				BC6A84D41C3C683600CB8887 /* Info.plist */,
+			);
+			path = BreakBricksTests;
+			sourceTree = "<group>";
+		};
+		BC6A84DC1C3C683700CB8887 /* BreakBricksUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BC6A84DD1C3C683700CB8887 /* BreakBricksUITests.m */,
+				BC6A84DF1C3C683700CB8887 /* Info.plist */,
+			);
+			path = BreakBricksUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BC6A84B21C3C683500CB8887 /* BreakBricks */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BC6A84E21C3C683700CB8887 /* Build configuration list for PBXNativeTarget "BreakBricks" */;
+			buildPhases = (
+				BC6A84AF1C3C683500CB8887 /* Sources */,
+				BC6A84B01C3C683500CB8887 /* Frameworks */,
+				BC6A84B11C3C683500CB8887 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BreakBricks;
+			productName = BreakBricks;
+			productReference = BC6A84B31C3C683500CB8887 /* BreakBricks.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BC6A84CD1C3C683600CB8887 /* BreakBricksTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BC6A84E51C3C683700CB8887 /* Build configuration list for PBXNativeTarget "BreakBricksTests" */;
+			buildPhases = (
+				BC6A84CA1C3C683600CB8887 /* Sources */,
+				BC6A84CB1C3C683600CB8887 /* Frameworks */,
+				BC6A84CC1C3C683600CB8887 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BC6A84D01C3C683600CB8887 /* PBXTargetDependency */,
+			);
+			name = BreakBricksTests;
+			productName = BreakBricksTests;
+			productReference = BC6A84CE1C3C683600CB8887 /* BreakBricksTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BC6A84D81C3C683600CB8887 /* BreakBricksUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BC6A84E81C3C683700CB8887 /* Build configuration list for PBXNativeTarget "BreakBricksUITests" */;
+			buildPhases = (
+				BC6A84D51C3C683600CB8887 /* Sources */,
+				BC6A84D61C3C683600CB8887 /* Frameworks */,
+				BC6A84D71C3C683600CB8887 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BC6A84DB1C3C683600CB8887 /* PBXTargetDependency */,
+			);
+			name = BreakBricksUITests;
+			productName = BreakBricksUITests;
+			productReference = BC6A84D91C3C683600CB8887 /* BreakBricksUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BC6A84AB1C3C683400CB8887 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Rich Rosiak";
+				TargetAttributes = {
+					BC6A84B21C3C683500CB8887 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 6W8L9CKJ3Y;
+					};
+					BC6A84CD1C3C683600CB8887 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 6W8L9CKJ3Y;
+						TestTargetID = BC6A84B21C3C683500CB8887;
+					};
+					BC6A84D81C3C683600CB8887 = {
+						CreatedOnToolsVersion = 7.2;
+						DevelopmentTeam = 6W8L9CKJ3Y;
+						TestTargetID = BC6A84B21C3C683500CB8887;
+					};
+				};
+			};
+			buildConfigurationList = BC6A84AE1C3C683400CB8887 /* Build configuration list for PBXProject "BreakBricks" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BC6A84AA1C3C683400CB8887;
+			productRefGroup = BC6A84B41C3C683500CB8887 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BC6A84B21C3C683500CB8887 /* BreakBricks */,
+				BC6A84CD1C3C683600CB8887 /* BreakBricksTests */,
+				BC6A84D81C3C683600CB8887 /* BreakBricksUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BC6A84B11C3C683500CB8887 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC6A84BD1C3C683500CB8887 /* art.scnassets in Resources */,
+				BC6A84C81C3C683600CB8887 /* LaunchScreen.storyboard in Resources */,
+				BC6A84C51C3C683600CB8887 /* Assets.xcassets in Resources */,
+				BC6A84C31C3C683500CB8887 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC6A84CC1C3C683600CB8887 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC6A84D71C3C683600CB8887 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BC6A84AF1C3C683500CB8887 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC6A84BB1C3C683500CB8887 /* AppDelegate.m in Sources */,
+				BC6A84C01C3C683500CB8887 /* GameViewController.m in Sources */,
+				BC6A84B81C3C683500CB8887 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC6A84CA1C3C683600CB8887 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC6A84D31C3C683600CB8887 /* BreakBricksTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC6A84D51C3C683600CB8887 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC6A84DE1C3C683700CB8887 /* BreakBricksUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BC6A84D01C3C683600CB8887 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BC6A84B21C3C683500CB8887 /* BreakBricks */;
+			targetProxy = BC6A84CF1C3C683600CB8887 /* PBXContainerItemProxy */;
+		};
+		BC6A84DB1C3C683600CB8887 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BC6A84B21C3C683500CB8887 /* BreakBricks */;
+			targetProxy = BC6A84DA1C3C683600CB8887 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BC6A84C11C3C683500CB8887 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BC6A84C21C3C683500CB8887 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BC6A84C61C3C683600CB8887 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BC6A84C71C3C683600CB8887 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BC6A84E01C3C683700CB8887 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BC6A84E11C3C683700CB8887 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BC6A84E31C3C683700CB8887 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = BreakBricks/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "iMagine-Games.BreakBricks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		BC6A84E41C3C683700CB8887 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = BreakBricks/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "iMagine-Games.BreakBricks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		BC6A84E61C3C683700CB8887 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				INFOPLIST_FILE = BreakBricksTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "iMagine-Games.BreakBricksTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BreakBricks.app/BreakBricks";
+			};
+			name = Debug;
+		};
+		BC6A84E71C3C683700CB8887 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = BreakBricksTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "iMagine-Games.BreakBricksTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BreakBricks.app/BreakBricks";
+			};
+			name = Release;
+		};
+		BC6A84E91C3C683700CB8887 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				INFOPLIST_FILE = BreakBricksUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "iMagine-Games.BreakBricksUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = BreakBricks;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		BC6A84EA1C3C683700CB8887 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = BreakBricksUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "iMagine-Games.BreakBricksUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = BreakBricks;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BC6A84AE1C3C683400CB8887 /* Build configuration list for PBXProject "BreakBricks" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC6A84E01C3C683700CB8887 /* Debug */,
+				BC6A84E11C3C683700CB8887 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BC6A84E21C3C683700CB8887 /* Build configuration list for PBXNativeTarget "BreakBricks" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC6A84E31C3C683700CB8887 /* Debug */,
+				BC6A84E41C3C683700CB8887 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		BC6A84E51C3C683700CB8887 /* Build configuration list for PBXNativeTarget "BreakBricksTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC6A84E61C3C683700CB8887 /* Debug */,
+				BC6A84E71C3C683700CB8887 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		BC6A84E81C3C683700CB8887 /* Build configuration list for PBXNativeTarget "BreakBricksUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC6A84E91C3C683700CB8887 /* Debug */,
+				BC6A84EA1C3C683700CB8887 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BC6A84AB1C3C683400CB8887 /* Project object */;
+}
