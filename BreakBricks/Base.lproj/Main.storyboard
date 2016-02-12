@@ -1,18 +1,121 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BV1-FR-VrT">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="PbV-O6-J2S">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
+        <!--Player View Controller-->
+        <scene sceneID="vrK-Bw-oYJ">
+            <objects>
+                <viewController id="ioz-JB-v7G" customClass="IGPlayerViewController" sceneMemberID="viewController">
+                    <connections>
+                        <segue destination="BV1-FR-VrT" kind="show" identifier="startGameSegue" id="nyI-kC-WcQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="d4b-Nb-hU3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1036" y="582"/>
+        </scene>
+        <!--Leader Board View Controller-->
+        <scene sceneID="cca-3N-Qfa">
+            <objects>
+                <viewController id="KJU-oL-qZ6" customClass="IGLeaderBoardViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="QLz-JE-BkO"/>
+                        <viewControllerLayoutGuide type="bottom" id="4Cc-lP-Ubh"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="80B-Lt-2GO">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Leader Board" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ooE-aL-f3N">
+                                <rect key="frame" x="249" y="70" width="103" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="XiD-8f-sS5">
+                                <rect key="frame" x="188" y="123" width="240" height="236"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lZM-nl-MRZ">
+                                <rect key="frame" x="516" y="20" width="48" height="30"/>
+                                <state key="normal" title="Cancel"/>
+                                <connections>
+                                    <action selector="cancelLeaderBoard:" destination="KJU-oL-qZ6" eventType="touchUpInside" id="e4o-BA-IUe"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="lZM-nl-MRZ" firstAttribute="top" secondItem="QLz-JE-BkO" secondAttribute="bottom" constant="5" id="BGc-jz-ujV"/>
+                            <constraint firstItem="ooE-aL-f3N" firstAttribute="centerX" secondItem="80B-Lt-2GO" secondAttribute="centerX" id="Khe-x8-hhP"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="lZM-nl-MRZ" secondAttribute="trailing" constant="15" id="LjU-si-tpR"/>
+                            <constraint firstItem="XiD-8f-sS5" firstAttribute="centerX" secondItem="80B-Lt-2GO" secondAttribute="centerX" id="TLg-g1-EuQ"/>
+                            <constraint firstItem="XiD-8f-sS5" firstAttribute="top" secondItem="ooE-aL-f3N" secondAttribute="bottom" constant="35" id="VMW-wc-NRl"/>
+                            <constraint firstItem="ooE-aL-f3N" firstAttribute="top" secondItem="QLz-JE-BkO" secondAttribute="bottom" constant="50" id="YsW-bD-yb0"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="leaderTable" destination="XiD-8f-sS5" id="890-Oh-buf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fdp-ps-Sfc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="257" y="1423"/>
+        </scene>
+        <!--Start View Controller-->
+        <scene sceneID="PPH-DV-9f5">
+            <objects>
+                <viewController id="kFw-xd-G3H" customClass="IGStartViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="EyJ-L4-gJN"/>
+                        <viewControllerLayoutGuide type="bottom" id="b4b-3K-oZM"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="hhs-hP-jec">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZfR-cg-CYs">
+                                <rect key="frame" x="255" y="70" width="90" height="30"/>
+                                <state key="normal" title="Select Player"/>
+                                <connections>
+                                    <action selector="selectPlayer:" destination="kFw-xd-G3H" eventType="touchUpInside" id="D9U-c9-NRL"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CQP-yh-zer">
+                                <rect key="frame" x="254" y="150" width="92" height="30"/>
+                                <state key="normal" title="Leader Board"/>
+                                <connections>
+                                    <action selector="showLeaderBoard:" destination="kFw-xd-G3H" eventType="touchUpInside" id="Ly0-nh-1N0"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ZfR-cg-CYs" firstAttribute="top" secondItem="EyJ-L4-gJN" secondAttribute="bottom" constant="50" id="BD9-S9-ch0"/>
+                            <constraint firstItem="CQP-yh-zer" firstAttribute="top" secondItem="ZfR-cg-CYs" secondAttribute="bottom" constant="50" id="HUP-KC-OMm"/>
+                            <constraint firstItem="CQP-yh-zer" firstAttribute="centerX" secondItem="hhs-hP-jec" secondAttribute="centerX" id="eXL-m7-6xc"/>
+                            <constraint firstItem="ZfR-cg-CYs" firstAttribute="centerX" secondItem="hhs-hP-jec" secondAttribute="centerX" id="rnA-ZP-MCU"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="ddx-Lx-Dun"/>
+                    <connections>
+                        <segue destination="ioz-JB-v7G" kind="show" identifier="SelectPlayerSegue" id="wNm-oe-3Q4"/>
+                        <segue destination="KJU-oL-qZ6" kind="show" identifier="LeaderBoardSegue" id="xFI-aS-UMb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XlN-yL-b8H" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="257" y="582"/>
+        </scene>
         <!--Game View Controller-->
         <scene sceneID="tXr-a1-R10">
             <objects>
-                <viewController id="BV1-FR-VrT" customClass="GameViewController" customModuleProvider="" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Cei-gA-s71"/>
-                        <viewControllerLayoutGuide type="bottom" id="O1X-57-Ctf"/>
-                    </layoutGuides>
-                    <sceneKitView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="3se-qz-xqx">
+                <viewController id="BV1-FR-VrT" customClass="IGGameViewController" sceneMemberID="viewController">
+                    <sceneKitView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="3se-qz-xqx" customClass="SKView">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -20,6 +123,25 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="SZV-WD-TEh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1754" y="554"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ZoV-bq-Kvl">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="PbV-O6-J2S" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="2Dr-Qz-Cka">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="kFw-xd-G3H" kind="relationship" relationship="rootViewController" id="6oP-ak-DX7"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="c7v-Sc-M19" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-555" y="582"/>
         </scene>
     </scenes>
 </document>

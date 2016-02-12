@@ -7,15 +7,44 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BC00A3BD1C3DA2CA0035CFF8 /* blip.caf in Resources */ = {isa = PBXBuildFile; fileRef = BC00A3BA1C3D9F600035CFF8 /* blip.caf */; };
+		BC00A3BE1C3DA2CA0035CFF8 /* brickhit.caf in Resources */ = {isa = PBXBuildFile; fileRef = BC00A3BB1C3D9F600035CFF8 /* brickhit.caf */; };
+		BC00A3BF1C3DA2CA0035CFF8 /* gameover.caf in Resources */ = {isa = PBXBuildFile; fileRef = BC00A3BC1C3D9F600035CFF8 /* gameover.caf */; };
+		BC00A3C21C3DABA60035CFF8 /* IGGameOverScene.m in Sources */ = {isa = PBXBuildFile; fileRef = BC00A3C11C3DABA60035CFF8 /* IGGameOverScene.m */; };
+		BC00A3C51C3DF4050035CFF8 /* IGNextLevelScene.m in Sources */ = {isa = PBXBuildFile; fileRef = BC00A3C41C3DF4050035CFF8 /* IGNextLevelScene.m */; };
+		BC00A3C71C3E08350035CFF8 /* levelSuccess.wav in Resources */ = {isa = PBXBuildFile; fileRef = BC00A3C61C3E08350035CFF8 /* levelSuccess.wav */; };
+		BC3308471C3F885D0096F51C /* cannonball.png in Resources */ = {isa = PBXBuildFile; fileRef = BC3308461C3F885D0096F51C /* cannonball.png */; };
+		BC363F461C51E80B009D7A71 /* IGStartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC363F451C51E80B009D7A71 /* IGStartViewController.m */; };
+		BC363F491C51ED7B009D7A71 /* IGLeaderBoardViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC363F481C51ED7B009D7A71 /* IGLeaderBoardViewController.m */; };
+		BC62E0471C5B2A7C007A706E /* IGGameManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BC62E0461C5B2A7C007A706E /* IGGameManager.m */; };
+		BC62E04A1C5B313A007A706E /* RainParticle.sks in Resources */ = {isa = PBXBuildFile; fileRef = BC62E0481C5B313A007A706E /* RainParticle.sks */; };
+		BC62E04B1C5B313A007A706E /* spark.png in Resources */ = {isa = PBXBuildFile; fileRef = BC62E0491C5B313A007A706E /* spark.png */; };
+		BC62E04E1C5B3350007A706E /* IGSixthLevelScene.m in Sources */ = {isa = PBXBuildFile; fileRef = BC62E04D1C5B3350007A706E /* IGSixthLevelScene.m */; };
+		BC662C6B1C420CA000571CCC /* brickbreaker_launch_sm.png in Resources */ = {isa = PBXBuildFile; fileRef = BC662C6A1C420CA000571CCC /* brickbreaker_launch_sm.png */; };
+		BC662C711C43794300571CCC /* IGPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC662C701C43794200571CCC /* IGPlayerViewController.m */; };
 		BC6A84B81C3C683500CB8887 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BC6A84B71C3C683500CB8887 /* main.m */; };
-		BC6A84BB1C3C683500CB8887 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BC6A84BA1C3C683500CB8887 /* AppDelegate.m */; };
+		BC6A84BB1C3C683500CB8887 /* IGAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BC6A84BA1C3C683500CB8887 /* IGAppDelegate.m */; };
 		BC6A84BD1C3C683500CB8887 /* art.scnassets in Resources */ = {isa = PBXBuildFile; fileRef = BC6A84BC1C3C683500CB8887 /* art.scnassets */; };
-		BC6A84C01C3C683500CB8887 /* GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC6A84BF1C3C683500CB8887 /* GameViewController.m */; };
+		BC6A84C01C3C683500CB8887 /* IGGameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC6A84BF1C3C683500CB8887 /* IGGameViewController.m */; };
 		BC6A84C31C3C683500CB8887 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC6A84C11C3C683500CB8887 /* Main.storyboard */; };
 		BC6A84C51C3C683600CB8887 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC6A84C41C3C683600CB8887 /* Assets.xcassets */; };
 		BC6A84C81C3C683600CB8887 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC6A84C61C3C683600CB8887 /* LaunchScreen.storyboard */; };
 		BC6A84D31C3C683600CB8887 /* BreakBricksTests.m in Sources */ = {isa = PBXBuildFile; fileRef = BC6A84D21C3C683600CB8887 /* BreakBricksTests.m */; };
 		BC6A84DE1C3C683700CB8887 /* BreakBricksUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = BC6A84DD1C3C683700CB8887 /* BreakBricksUITests.m */; };
+		BC6A84F21C3C6B7100CB8887 /* ball.png in Resources */ = {isa = PBXBuildFile; fileRef = BC6A84EC1C3C6B7100CB8887 /* ball.png */; };
+		BC6A84F31C3C6B7100CB8887 /* ball@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BC6A84ED1C3C6B7100CB8887 /* ball@2x.png */; };
+		BC6A84F41C3C6B7100CB8887 /* brick.png in Resources */ = {isa = PBXBuildFile; fileRef = BC6A84EE1C3C6B7100CB8887 /* brick.png */; };
+		BC6A84F51C3C6B7100CB8887 /* brick@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BC6A84EF1C3C6B7100CB8887 /* brick@2x.png */; };
+		BC6A84F61C3C6B7100CB8887 /* paddle.png in Resources */ = {isa = PBXBuildFile; fileRef = BC6A84F01C3C6B7100CB8887 /* paddle.png */; };
+		BC6A84F71C3C6B7100CB8887 /* paddle@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = BC6A84F11C3C6B7100CB8887 /* paddle@2x.png */; };
+		BC6A84F91C3C6FC600CB8887 /* IGMainBrickScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = BC6A84F81C3C6FC600CB8887 /* IGMainBrickScene.sks */; };
+		BC6A84FD1C3C71B500CB8887 /* IGStartBrickScene.m in Sources */ = {isa = PBXBuildFile; fileRef = BC6A84FC1C3C71B500CB8887 /* IGStartBrickScene.m */; };
+		BC79ED201C3FE7E100B28F1B /* firecannon.wav in Resources */ = {isa = PBXBuildFile; fileRef = BC79ED1F1C3FE7E100B28F1B /* firecannon.wav */; };
+		BC8B528F1C57163800B96688 /* IGPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = BC8B528E1C57163800B96688 /* IGPlayer.m */; };
+		BC8B52921C57331000B96688 /* IGFifthLevelScene.m in Sources */ = {isa = PBXBuildFile; fileRef = BC8B52911C57331000B96688 /* IGFifthLevelScene.m */; };
+		BC8EDEA91C5BCEAC00C1B89E /* ball_dark.png in Resources */ = {isa = PBXBuildFile; fileRef = BC8EDEA81C5BCEAC00C1B89E /* ball_dark.png */; };
+		BCFB96A11C61271C00D39D94 /* IGSeventhLevelScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFB96A01C61271C00D39D94 /* IGSeventhLevelScene.swift */; };
+		BCFDE4FC1C6D9A340048B0E6 /* ExplosionParticle.sks in Resources */ = {isa = PBXBuildFile; fileRef = BCFDE4FB1C6D9A340048B0E6 /* ExplosionParticle.sks */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,13 +65,37 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BC00A3BA1C3D9F600035CFF8 /* blip.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = blip.caf; sourceTree = "<group>"; };
+		BC00A3BB1C3D9F600035CFF8 /* brickhit.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = brickhit.caf; sourceTree = "<group>"; };
+		BC00A3BC1C3D9F600035CFF8 /* gameover.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = gameover.caf; sourceTree = "<group>"; };
+		BC00A3C01C3DABA60035CFF8 /* IGGameOverScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IGGameOverScene.h; sourceTree = "<group>"; };
+		BC00A3C11C3DABA60035CFF8 /* IGGameOverScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IGGameOverScene.m; sourceTree = "<group>"; };
+		BC00A3C31C3DF4040035CFF8 /* IGNextLevelScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IGNextLevelScene.h; sourceTree = "<group>"; };
+		BC00A3C41C3DF4050035CFF8 /* IGNextLevelScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IGNextLevelScene.m; sourceTree = "<group>"; };
+		BC00A3C61C3E08350035CFF8 /* levelSuccess.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = levelSuccess.wav; sourceTree = "<group>"; };
+		BC3308461C3F885D0096F51C /* cannonball.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cannonball.png; sourceTree = "<group>"; };
+		BC363F441C51E80B009D7A71 /* IGStartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IGStartViewController.h; sourceTree = "<group>"; };
+		BC363F451C51E80B009D7A71 /* IGStartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IGStartViewController.m; sourceTree = "<group>"; };
+		BC363F471C51ED7B009D7A71 /* IGLeaderBoardViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IGLeaderBoardViewController.h; sourceTree = "<group>"; };
+		BC363F481C51ED7B009D7A71 /* IGLeaderBoardViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IGLeaderBoardViewController.m; sourceTree = "<group>"; };
+		BC62E0451C5B2A7C007A706E /* IGGameManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IGGameManager.h; sourceTree = "<group>"; };
+		BC62E0461C5B2A7C007A706E /* IGGameManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IGGameManager.m; sourceTree = "<group>"; };
+		BC62E0481C5B313A007A706E /* RainParticle.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = RainParticle.sks; sourceTree = "<group>"; };
+		BC62E0491C5B313A007A706E /* spark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spark.png; sourceTree = "<group>"; };
+		BC62E04C1C5B3350007A706E /* IGSixthLevelScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IGSixthLevelScene.h; sourceTree = "<group>"; };
+		BC62E04D1C5B3350007A706E /* IGSixthLevelScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IGSixthLevelScene.m; sourceTree = "<group>"; };
+		BC62E04F1C5B39CA007A706E /* RainParticle.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = RainParticle.sks; sourceTree = "<group>"; };
+		BC62E0501C5B39CA007A706E /* spark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spark.png; sourceTree = "<group>"; };
+		BC662C6A1C420CA000571CCC /* brickbreaker_launch_sm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = brickbreaker_launch_sm.png; path = art.scnassets/brickbreaker_launch_sm.png; sourceTree = "<group>"; };
+		BC662C6F1C43794200571CCC /* IGPlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IGPlayerViewController.h; sourceTree = "<group>"; };
+		BC662C701C43794200571CCC /* IGPlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IGPlayerViewController.m; sourceTree = "<group>"; };
 		BC6A84B31C3C683500CB8887 /* BreakBricks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BreakBricks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC6A84B71C3C683500CB8887 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		BC6A84B91C3C683500CB8887 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		BC6A84BA1C3C683500CB8887 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		BC6A84B91C3C683500CB8887 /* IGAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IGAppDelegate.h; sourceTree = "<group>"; };
+		BC6A84BA1C3C683500CB8887 /* IGAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IGAppDelegate.m; sourceTree = "<group>"; };
 		BC6A84BC1C3C683500CB8887 /* art.scnassets */ = {isa = PBXFileReference; lastKnownFileType = wrapper.scnassets; path = art.scnassets; sourceTree = "<group>"; };
-		BC6A84BE1C3C683500CB8887 /* GameViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GameViewController.h; sourceTree = "<group>"; };
-		BC6A84BF1C3C683500CB8887 /* GameViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GameViewController.m; sourceTree = "<group>"; };
+		BC6A84BE1C3C683500CB8887 /* IGGameViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IGGameViewController.h; sourceTree = "<group>"; };
+		BC6A84BF1C3C683500CB8887 /* IGGameViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IGGameViewController.m; sourceTree = "<group>"; };
 		BC6A84C21C3C683500CB8887 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BC6A84C41C3C683600CB8887 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BC6A84C71C3C683600CB8887 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -53,6 +106,24 @@
 		BC6A84D91C3C683600CB8887 /* BreakBricksUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BreakBricksUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC6A84DD1C3C683700CB8887 /* BreakBricksUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BreakBricksUITests.m; sourceTree = "<group>"; };
 		BC6A84DF1C3C683700CB8887 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BC6A84EC1C3C6B7100CB8887 /* ball.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ball.png; sourceTree = "<group>"; };
+		BC6A84ED1C3C6B7100CB8887 /* ball@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ball@2x.png"; sourceTree = "<group>"; };
+		BC6A84EE1C3C6B7100CB8887 /* brick.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = brick.png; sourceTree = "<group>"; };
+		BC6A84EF1C3C6B7100CB8887 /* brick@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "brick@2x.png"; sourceTree = "<group>"; };
+		BC6A84F01C3C6B7100CB8887 /* paddle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = paddle.png; sourceTree = "<group>"; };
+		BC6A84F11C3C6B7100CB8887 /* paddle@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "paddle@2x.png"; sourceTree = "<group>"; };
+		BC6A84F81C3C6FC600CB8887 /* IGMainBrickScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = IGMainBrickScene.sks; sourceTree = "<group>"; };
+		BC6A84FB1C3C71B500CB8887 /* IGStartBrickScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IGStartBrickScene.h; path = ../IGStartBrickScene.h; sourceTree = "<group>"; };
+		BC6A84FC1C3C71B500CB8887 /* IGStartBrickScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IGStartBrickScene.m; path = ../IGStartBrickScene.m; sourceTree = "<group>"; };
+		BC79ED1F1C3FE7E100B28F1B /* firecannon.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = firecannon.wav; sourceTree = "<group>"; };
+		BC8B528D1C57163800B96688 /* IGPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IGPlayer.h; sourceTree = "<group>"; };
+		BC8B528E1C57163800B96688 /* IGPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IGPlayer.m; sourceTree = "<group>"; };
+		BC8B52901C57331000B96688 /* IGFifthLevelScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IGFifthLevelScene.h; sourceTree = "<group>"; };
+		BC8B52911C57331000B96688 /* IGFifthLevelScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IGFifthLevelScene.m; sourceTree = "<group>"; };
+		BC8EDEA81C5BCEAC00C1B89E /* ball_dark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ball_dark.png; sourceTree = "<group>"; };
+		BC8EDEAA1C60618500C1B89E /* BreakBricks-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BreakBricks-Bridging-Header.h"; sourceTree = "<group>"; };
+		BCFB96A01C61271C00D39D94 /* IGSeventhLevelScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IGSeventhLevelScene.swift; sourceTree = "<group>"; };
+		BCFDE4FB1C6D9A340048B0E6 /* ExplosionParticle.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = ExplosionParticle.sks; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,16 +174,41 @@
 		BC6A84B51C3C683500CB8887 /* BreakBricks */ = {
 			isa = PBXGroup;
 			children = (
-				BC6A84B91C3C683500CB8887 /* AppDelegate.h */,
-				BC6A84BA1C3C683500CB8887 /* AppDelegate.m */,
+				BCFDE4FA1C6D997C0048B0E6 /* Particles */,
+				BC6A84EB1C3C6B0E00CB8887 /* resources */,
+				BC6A84B91C3C683500CB8887 /* IGAppDelegate.h */,
+				BC6A84BA1C3C683500CB8887 /* IGAppDelegate.m */,
+				BC62E0451C5B2A7C007A706E /* IGGameManager.h */,
+				BC62E0461C5B2A7C007A706E /* IGGameManager.m */,
 				BC6A84BC1C3C683500CB8887 /* art.scnassets */,
-				BC6A84BE1C3C683500CB8887 /* GameViewController.h */,
-				BC6A84BF1C3C683500CB8887 /* GameViewController.m */,
 				BC6A84C11C3C683500CB8887 /* Main.storyboard */,
 				BC6A84C41C3C683600CB8887 /* Assets.xcassets */,
 				BC6A84C61C3C683600CB8887 /* LaunchScreen.storyboard */,
 				BC6A84C91C3C683600CB8887 /* Info.plist */,
+				BC363F441C51E80B009D7A71 /* IGStartViewController.h */,
+				BC363F451C51E80B009D7A71 /* IGStartViewController.m */,
+				BC662C6F1C43794200571CCC /* IGPlayerViewController.h */,
+				BC662C701C43794200571CCC /* IGPlayerViewController.m */,
+				BC363F471C51ED7B009D7A71 /* IGLeaderBoardViewController.h */,
+				BC363F481C51ED7B009D7A71 /* IGLeaderBoardViewController.m */,
+				BC8B528D1C57163800B96688 /* IGPlayer.h */,
+				BC8B528E1C57163800B96688 /* IGPlayer.m */,
+				BC6A84BE1C3C683500CB8887 /* IGGameViewController.h */,
+				BC6A84BF1C3C683500CB8887 /* IGGameViewController.m */,
+				BC6A84FB1C3C71B500CB8887 /* IGStartBrickScene.h */,
+				BC6A84FC1C3C71B500CB8887 /* IGStartBrickScene.m */,
+				BC00A3C01C3DABA60035CFF8 /* IGGameOverScene.h */,
+				BC00A3C11C3DABA60035CFF8 /* IGGameOverScene.m */,
+				BC00A3C31C3DF4040035CFF8 /* IGNextLevelScene.h */,
+				BC00A3C41C3DF4050035CFF8 /* IGNextLevelScene.m */,
+				BC8B52901C57331000B96688 /* IGFifthLevelScene.h */,
+				BC8B52911C57331000B96688 /* IGFifthLevelScene.m */,
+				BC62E04C1C5B3350007A706E /* IGSixthLevelScene.h */,
+				BC62E04D1C5B3350007A706E /* IGSixthLevelScene.m */,
+				BCFB96A01C61271C00D39D94 /* IGSeventhLevelScene.swift */,
 				BC6A84B61C3C683500CB8887 /* Supporting Files */,
+				BC6A84F81C3C6FC600CB8887 /* IGMainBrickScene.sks */,
+				BC8EDEAA1C60618500C1B89E /* BreakBricks-Bridging-Header.h */,
 			);
 			path = BreakBricks;
 			sourceTree = "<group>";
@@ -141,6 +237,39 @@
 				BC6A84DF1C3C683700CB8887 /* Info.plist */,
 			);
 			path = BreakBricksUITests;
+			sourceTree = "<group>";
+		};
+		BC6A84EB1C3C6B0E00CB8887 /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				BC6A84EC1C3C6B7100CB8887 /* ball.png */,
+				BC6A84ED1C3C6B7100CB8887 /* ball@2x.png */,
+				BC8EDEA81C5BCEAC00C1B89E /* ball_dark.png */,
+				BC3308461C3F885D0096F51C /* cannonball.png */,
+				BC6A84EE1C3C6B7100CB8887 /* brick.png */,
+				BC6A84EF1C3C6B7100CB8887 /* brick@2x.png */,
+				BC6A84F01C3C6B7100CB8887 /* paddle.png */,
+				BC6A84F11C3C6B7100CB8887 /* paddle@2x.png */,
+				BC00A3BA1C3D9F600035CFF8 /* blip.caf */,
+				BC00A3BB1C3D9F600035CFF8 /* brickhit.caf */,
+				BC00A3BC1C3D9F600035CFF8 /* gameover.caf */,
+				BC00A3C61C3E08350035CFF8 /* levelSuccess.wav */,
+				BC79ED1F1C3FE7E100B28F1B /* firecannon.wav */,
+				BC662C6A1C420CA000571CCC /* brickbreaker_launch_sm.png */,
+				BC62E0481C5B313A007A706E /* RainParticle.sks */,
+				BC62E0491C5B313A007A706E /* spark.png */,
+			);
+			name = resources;
+			sourceTree = "<group>";
+		};
+		BCFDE4FA1C6D997C0048B0E6 /* Particles */ = {
+			isa = PBXGroup;
+			children = (
+				BC62E04F1C5B39CA007A706E /* RainParticle.sks */,
+				BC62E0501C5B39CA007A706E /* spark.png */,
+				BCFDE4FB1C6D9A340048B0E6 /* ExplosionParticle.sks */,
+			);
+			name = Particles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -249,8 +378,26 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BC8EDEA91C5BCEAC00C1B89E /* ball_dark.png in Resources */,
+				BC62E04A1C5B313A007A706E /* RainParticle.sks in Resources */,
+				BC62E04B1C5B313A007A706E /* spark.png in Resources */,
+				BC662C6B1C420CA000571CCC /* brickbreaker_launch_sm.png in Resources */,
+				BC79ED201C3FE7E100B28F1B /* firecannon.wav in Resources */,
+				BC3308471C3F885D0096F51C /* cannonball.png in Resources */,
+				BC00A3C71C3E08350035CFF8 /* levelSuccess.wav in Resources */,
+				BC00A3BD1C3DA2CA0035CFF8 /* blip.caf in Resources */,
+				BC00A3BE1C3DA2CA0035CFF8 /* brickhit.caf in Resources */,
+				BC00A3BF1C3DA2CA0035CFF8 /* gameover.caf in Resources */,
 				BC6A84BD1C3C683500CB8887 /* art.scnassets in Resources */,
+				BC6A84F31C3C6B7100CB8887 /* ball@2x.png in Resources */,
+				BC6A84F41C3C6B7100CB8887 /* brick.png in Resources */,
+				BC6A84F91C3C6FC600CB8887 /* IGMainBrickScene.sks in Resources */,
+				BC6A84F21C3C6B7100CB8887 /* ball.png in Resources */,
+				BC6A84F61C3C6B7100CB8887 /* paddle.png in Resources */,
+				BC6A84F51C3C6B7100CB8887 /* brick@2x.png in Resources */,
+				BC6A84F71C3C6B7100CB8887 /* paddle@2x.png in Resources */,
 				BC6A84C81C3C683600CB8887 /* LaunchScreen.storyboard in Resources */,
+				BCFDE4FC1C6D9A340048B0E6 /* ExplosionParticle.sks in Resources */,
 				BC6A84C51C3C683600CB8887 /* Assets.xcassets in Resources */,
 				BC6A84C31C3C683500CB8887 /* Main.storyboard in Resources */,
 			);
@@ -277,9 +424,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BC6A84BB1C3C683500CB8887 /* AppDelegate.m in Sources */,
-				BC6A84C01C3C683500CB8887 /* GameViewController.m in Sources */,
+				BC363F491C51ED7B009D7A71 /* IGLeaderBoardViewController.m in Sources */,
+				BCFB96A11C61271C00D39D94 /* IGSeventhLevelScene.swift in Sources */,
+				BC8B52921C57331000B96688 /* IGFifthLevelScene.m in Sources */,
+				BC8B528F1C57163800B96688 /* IGPlayer.m in Sources */,
+				BC62E0471C5B2A7C007A706E /* IGGameManager.m in Sources */,
+				BC6A84BB1C3C683500CB8887 /* IGAppDelegate.m in Sources */,
+				BC6A84FD1C3C71B500CB8887 /* IGStartBrickScene.m in Sources */,
+				BC00A3C21C3DABA60035CFF8 /* IGGameOverScene.m in Sources */,
+				BC6A84C01C3C683500CB8887 /* IGGameViewController.m in Sources */,
+				BC62E04E1C5B3350007A706E /* IGSixthLevelScene.m in Sources */,
+				BC00A3C51C3DF4050035CFF8 /* IGNextLevelScene.m in Sources */,
 				BC6A84B81C3C683500CB8887 /* main.m in Sources */,
+				BC363F461C51E80B009D7A71 /* IGStartViewController.m in Sources */,
+				BC662C711C43794300571CCC /* IGPlayerViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -354,6 +512,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -398,6 +557,7 @@
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -420,10 +580,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEFINES_MODULE = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = BreakBricks/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "iMagine-Games.BreakBricks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "BreakBricks/BreakBricks-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
@@ -431,10 +599,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEFINES_MODULE = YES;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = BreakBricks/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "iMagine-Games.BreakBricks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "BreakBricks/BreakBricks-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -507,6 +682,7 @@
 				BC6A84E41C3C683700CB8887 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BC6A84E51C3C683700CB8887 /* Build configuration list for PBXNativeTarget "BreakBricksTests" */ = {
 			isa = XCConfigurationList;
@@ -515,6 +691,7 @@
 				BC6A84E71C3C683700CB8887 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		BC6A84E81C3C683700CB8887 /* Build configuration list for PBXNativeTarget "BreakBricksUITests" */ = {
 			isa = XCConfigurationList;
@@ -523,6 +700,7 @@
 				BC6A84EA1C3C683700CB8887 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

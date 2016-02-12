@@ -2,20 +2,39 @@
 //  GameViewController.m
 //  BreakBricks
 //
-//  Created by Joanna Rosiak on 1/5/16.
+//  Created by Rich Rosiak on 1/5/16.
 //  Copyright (c) 2016 Rich Rosiak. All rights reserved.
 //
 
-#import "GameViewController.h"
+#import "IGGameViewController.h"
+#import "IGStartBrickScene.h"
+#import "IGAppDelegate.h"
+#import "IGFifthLevelScene.h"
+#import "IGPlayerViewController.h"
+#import "IGSixthLevelScene.h"
 
-@implementation GameViewController
+#import "BreakBricks-Swift.h"
+
+@implementation IGGameViewController
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    IGAppDelegate *appDelegate = (IGAppDelegate*)[[UIApplication sharedApplication] delegate];
+    
+    NSLog(@"Entering game as player %@ on level %ld", appDelegate.currentPlayer, (long)appDelegate.currentLevel);
+    
+    if (appDelegate.currentLevel == 0)
+    {
+        appDelegate.currentLevel = 1;
+    }
+    
+    //appDelegate.currentLevel = 5; //debugging - to be removed when done
+    //[[NSUserDefaults standardUserDefaults] setInteger:3 forKey:[NSString stringWithFormat:@"%@%@", appDelegate.currentPlayer, PLAYER_LIVES_KEY_SUFFIX]]; //for debugging - to be removed when done
 
     // create a new scene
-    SCNScene *scene = [SCNScene sceneNamed:@"art.scnassets/ship.scn"];
+    /*SCNScene *scene = [SCNScene sceneNamed:@"art.scnassets/ship.scn"];
 
     // create and add a camera to the scene
     SCNNode *cameraNode = [SCNNode node];
@@ -65,9 +84,74 @@
     NSMutableArray *gestureRecognizers = [NSMutableArray array];
     [gestureRecognizers addObject:tapGesture];
     [gestureRecognizers addObjectsFromArray:scnView.gestureRecognizers];
-    scnView.gestureRecognizers = gestureRecognizers;
+    scnView.gestureRecognizers = gestureRecognizers;*/
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(gamePaused:)
+                                                 name:GAME_PAUSED_NOTIFICATION
+                                               object:nil];
+    
+    // Configure the view.
+    SKView * skView = (SKView *)self.view;
+    //skView.showsFPS = YES;
+    //skView.showsNodeCount = YES;
+    
+    // Create and configure the scene.
+    SKScene *gameScene;
+    
+    switch (appDelegate.currentLevel) {
+        case 1:
+        case 2:
+        case 3:
+        case 4:
+            gameScene = [IGStartBrickScene sceneWithSize:skView.bounds.size];
+            break;
+        case 5:
+            gameScene = [IGFifthLevelScene sceneWithSize:skView.bounds.size];
+            break;
+        case 6:
+            gameScene = [IGSixthLevelScene sceneWithSize:skView.bounds.size];
+            break;
+        case 7:
+            gameScene = [IGSeventhLevelScene sceneWithSize:skView.bounds.size];
+            break;
+        default:
+            gameScene = [IGSixthLevelScene sceneWithSize:skView.bounds.size]; //currently max level to play
+            break;
+    }
+    
+    gameScene.scaleMode = SKSceneScaleModeAspectFill;
+    
+    // Present the scene.
+    [skView presentScene:gameScene];
 }
 
+-(void) gamePaused:(NSNotification*)notification
+{
+    UIAlertController* alert = [UIAlertController alertControllerWithTitle:@"Game Paused"
+                                                                   message:@"What would you like to do next?"
+                                                            preferredStyle:UIAlertControllerStyleAlert];
+    
+    UIAlertAction* defaultAction = [UIAlertAction actionWithTitle:@"Continue in the game." style:UIAlertActionStyleDefault
+                                                          handler:^(UIAlertAction * action) {}];
+    
+    [alert addAction:defaultAction];
+    
+    UIAlertAction *goBackAction = [UIAlertAction actionWithTitle:@"Go back to main menu." style:UIAlertActionStyleDefault
+                                                        handler:^(UIAlertAction * action) {
+                                                            [self.navigationController popToRootViewControllerAnimated:YES];
+                                                        }];
+    [alert addAction:goBackAction];
+    
+    [self presentViewController:alert animated:YES completion:nil];
+}
+
+-(void) viewWillDisappear:(BOOL)animated
+{
+    [[NSNotificationCenter defaultCenter] removeObserver:self name:GAME_PAUSED_NOTIFICATION object:nil];
+}
+
+/*
 - (void) handleTap:(UIGestureRecognizer*)gestureRecognize
 {
     // retrieve the SCNView
@@ -104,6 +188,7 @@
         [SCNTransaction commit];
     }
 }
+ */
 
 - (BOOL)shouldAutorotate
 {
