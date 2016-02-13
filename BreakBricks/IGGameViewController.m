@@ -34,8 +34,8 @@
     NSLog(@"Will set up scene for device height: %f", self.view.frame.size.height);
     [[IGGameManager sharedInstance] setupSceneForFrameHeight:self.view.frame.size.height];
     
-    appDelegate.currentLevel = 7; //debugging - to be removed when done
-    [[NSUserDefaults standardUserDefaults] setInteger:3 forKey:[NSString stringWithFormat:@"%@%@", appDelegate.currentPlayer, PLAYER_LIVES_KEY_SUFFIX]]; //for debugging - to be removed when done
+    //appDelegate.currentLevel = 7; //debugging - to be removed when done
+    //[[NSUserDefaults standardUserDefaults] setInteger:3 forKey:[NSString stringWithFormat:@"%@%@", appDelegate.currentPlayer, PLAYER_LIVES_KEY_SUFFIX]]; //for debugging - to be removed when done
 
     // create a new scene
     /*SCNScene *scene = [SCNScene sceneNamed:@"art.scnassets/ship.scn"];
