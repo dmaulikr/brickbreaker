@@ -2,12 +2,14 @@
 //  IGGameManager.h
 //  BreakBricks
 //
-//  Created by Joanna Rosiak on 1/29/16.
+//  Created by Rich Rosiak on 1/29/16.
 //  Copyright © 2016 Rich Rosiak. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
 #import <AVFoundation/AVFoundation.h>
+
+#import "BreakBricks-Swift.h"
 
 /*
  Singleton class
@@ -16,10 +18,12 @@
 
 + (IGGameManager*) sharedInstance;
 
+@property (nonatomic, strong) IGSceneSetup *sceneSetup;
+
 -(AVAudioPlayer*) createAudioPlayerForData:(NSData*)audioData;
 
 -(NSData*) retrieveDataForAudioFileName:(NSString*)audioFile;
 
--(CGFloat) provideScaleFactorForHeight:(NSInteger)frameHeight;
+-(void) setupSceneForFrameHeight:(NSInteger)frameHeight;
 
 @end

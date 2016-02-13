@@ -55,22 +55,66 @@
     return soundData;
 }
 
--(CGFloat) provideScaleFactorForHeight:(NSInteger)frameHeight {
+-(void) setupSceneForFrameHeight:(NSInteger)frameHeight {
     
     NSLog(@"The frame heght is %ld", (long)frameHeight);
     
+    self.sceneSetup = [IGSceneSetup new];
+    
     switch (frameHeight) {
         case 480: //iPhone 4 or less
-            return 0.4f;
+            self.sceneSetup.cloudScalingFactor = 0.4f;
+            self.sceneSetup.firstSceneBackgroundScalingFactor = 0.6f;
+            self.sceneSetup.cloudyBackgroundScalingFactor = 0.6f;
+            self.sceneSetup.brickImageName = @"art.scnassets/redBrick";
+            self.sceneSetup.ballSpeedScalingFactor = 0.7f;
+            self.sceneSetup.tankBackScalingFactor = 0.4f;
             break;
         case 568: //iPhone 5
-            return 0.5f;
+            self.sceneSetup.cloudScalingFactor = 0.5f;
+            self.sceneSetup.firstSceneBackgroundScalingFactor = 0.7f;
+            self.sceneSetup.cloudyBackgroundScalingFactor = 0.7f;
+            self.sceneSetup.brickImageName = @"art.scnassets/redBrick";
+            self.sceneSetup.ballSpeedScalingFactor = 1.0f;
+            self.sceneSetup.tankBackScalingFactor = 0.5f;
             break;
         case 667: //iPhone 6
-            return 0.7f;
+            self.sceneSetup.cloudScalingFactor = 0.7f;
+            self.sceneSetup.firstSceneBackgroundScalingFactor = 0.8f;
+            self.sceneSetup.cloudyBackgroundScalingFactor = 0.9f;
+            self.sceneSetup.brickImageName = @"art.scnassets/redBrick";
+            self.sceneSetup.ballSpeedScalingFactor = 1.3f;
+            self.sceneSetup.tankBackScalingFactor = 0.5f;
+            break;
+        case 763: //iPhone 6 Plus
+            self.sceneSetup.cloudScalingFactor = 0.8f;
+            self.sceneSetup.firstSceneBackgroundScalingFactor = 0.9f;
+            self.sceneSetup.cloudyBackgroundScalingFactor = 1.1f;
+            self.sceneSetup.brickImageName = @"art.scnassets/redBrick";
+            self.sceneSetup.ballSpeedScalingFactor = 1.5f;
+            self.sceneSetup.tankBackScalingFactor = 0.6f;
+            break;
+        case 1024: //iPad
+            self.sceneSetup.cloudScalingFactor = 1.0f;
+            self.sceneSetup.firstSceneBackgroundScalingFactor = 1.3f;
+            self.sceneSetup.cloudyBackgroundScalingFactor = 1.6f;
+            self.sceneSetup.brickImageName = @"art.scnassets/redBrick_iPad";
+            self.sceneSetup.ballScalingFactor = 2.0f;
+            self.sceneSetup.paddleScalingFactor = 2.0f;
+            self.sceneSetup.ballSpeedScalingFactor = 2.0f;
+            self.sceneSetup.tankBackgroundImageName = @"art.scnassets/tanks_back_iPad.jpg";
+            self.sceneSetup.tankBackScalingFactor = 0.6f;
             break;
         default:
-            return 1.0f;
+            self.sceneSetup.cloudScalingFactor = 1.0f;
+            self.sceneSetup.firstSceneBackgroundScalingFactor = 1.3f;
+            self.sceneSetup.cloudyBackgroundScalingFactor = 1.6f;
+            self.sceneSetup.brickImageName = @"art.scnassets/redBrick_iPad";
+            self.sceneSetup.ballScalingFactor = 2.0f;
+            self.sceneSetup.paddleScalingFactor = 2.0f;
+            self.sceneSetup.ballSpeedScalingFactor = 2.0f;
+            self.sceneSetup.tankBackgroundImageName = @"art.scnassets/tanks_back_iPad.jpg";
+            self.sceneSetup.tankBackScalingFactor = 0.7f;
             break;
     }
 }

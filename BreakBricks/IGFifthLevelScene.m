@@ -11,6 +11,8 @@
 #import <AVFoundation/AVFoundation.h>
 #import "IGGameManager.h"
 
+#import "BreakBricks-Swift.h"
+
 @interface IGFifthLevelScene ()
 
 @property (nonatomic, assign) BOOL wasFirstCloudReleased;
@@ -18,7 +20,8 @@
 
 @property (nonatomic, strong) AVAudioPlayer *windAudioPlayer;
 @property (nonatomic, strong) NSData *windSoundData;
-@property (nonatomic, assign) CGFloat scalingFactor;
+
+@property (nonatomic, strong) IGSceneSetup *sceneSetup;
 
 @end
 
@@ -40,6 +43,8 @@ static const uint32_t RAIN_CLOUD = 64; //00000000000000000000000001000000
         self.clouds = [NSMutableArray new];
     }
     
+    self.sceneSetup = [IGGameManager sharedInstance].sceneSetup;
+    
     //self.playWindBlowingSound = [SKAction playSoundFileNamed:@"art.scnassets/windBlowing.wav" waitForCompletion:NO];
     self.windSoundData = [[IGGameManager sharedInstance] retrieveDataForAudioFileName:WIND_SOUND_FILE_NAME]; //audio is 3 sec long, so we'd better use audio player
     
@@ -50,10 +55,6 @@ static const uint32_t RAIN_CLOUD = 64; //00000000000000000000000001000000
     
     [self addBackgroundClouds];
     
-    NSInteger frameHeight = (NSInteger) (floorf(self.frame.size.height));
-    self.scalingFactor = [[IGGameManager sharedInstance] provideScaleFactorForHeight:frameHeight];
-    NSLog(@"Scaling factor is: %f", self.scalingFactor);
-    
     return self;
 }
 
@@ -62,7 +63,7 @@ static const uint32_t RAIN_CLOUD = 64; //00000000000000000000000001000000
     SKSpriteNode *cloudyBackground = [SKSpriteNode spriteNodeWithImageNamed:@"art.scnassets/cloudySkies"];
     cloudyBackground.position = CGPointMake(self.size.width / 2, self.size.height / 2);
     cloudyBackground.zPosition = -1;
-    [cloudyBackground setScale:1.0f];
+    [cloudyBackground setScale:self.sceneSetup.cloudyBackgroundScalingFactor];
     
     [self addChild:cloudyBackground];
 }
@@ -120,7 +121,7 @@ static const uint32_t RAIN_CLOUD = 64; //00000000000000000000000001000000
     rainCloud.physicsBody.categoryBitMask = RAIN_CLOUD;
     rainCloud.physicsBody.friction = 0;
     rainCloud.physicsBody.linearDamping = 0;
-    [rainCloud setScale:self.scalingFactor];
+    [rainCloud setScale:self.sceneSetup.cloudScalingFactor];
     
     //clouds don't colide with anything
     rainCloud.physicsBody.collisionBitMask = 0; //also had to specify what colides with ball

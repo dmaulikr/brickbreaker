@@ -20,11 +20,14 @@ import SpriteKit
     
     var playCannonSound : SKAction!
     var startingVelocity : CGVector!
+    var sceneSetup : IGSceneSetup!
     
     override init(size: CGSize) {
         print("Initing 7th scene")
         
         super.init(size: size)
+        
+        self.sceneSetup = self.retrieveSceneSetup() as! IGSceneSetup //workaround for cyclic dependency with IGGameManager
         
         self.playCannonSound = SKAction.playSoundFileNamed("firecannon.wav", waitForCompletion: false)
         
@@ -40,10 +43,10 @@ import SpriteKit
     
     func addBackgroundImage() {
         
-        let backgroundNode = SKSpriteNode(imageNamed: "art.scnassets/tanks_backgrnd.jpg")
+        let backgroundNode = SKSpriteNode(imageNamed:self.sceneSetup.tankBackgroundImageName)  //"art.scnassets/tanks_backgrnd.jpg")
         backgroundNode.position = CGPointMake(self.size.width / 2, self.size.height / 2)
         
-        backgroundNode.setScale(0.5)
+        backgroundNode.setScale(self.sceneSetup.tankBackScalingFactor) //(0.5)
         backgroundNode.zPosition = -1
         
         self.addChild(backgroundNode)

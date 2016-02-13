@@ -13,6 +13,7 @@
 #import "IGPlayerViewController.h"
 #import <AVFoundation/AVFoundation.h>
 #import "IGSixthLevelScene.h"
+#import "IGGameManager.h"
 
 #import "BreakBricks-Swift.h"
 
@@ -24,13 +25,13 @@
 
 @property (nonatomic, strong) SKAction *playPaddleSound;
 @property (nonatomic, strong) SKAction *playBrickHitSound;
-//@property (nonatomic, strong) SKAction *playCannonSound;
 
 @property (nonatomic, strong) NSMutableArray *hitBricks;
 @property (nonatomic, assign) BOOL isGamePaused;
 @property (nonatomic, assign) BOOL isBallStarted;
 
 @property (nonatomic, strong) SKEmitterNode *explosionParticle;
+@property (nonatomic, strong) IGSceneSetup *sceneSetup;
 
 @end
 
@@ -65,6 +66,8 @@ NSString *LEVEL_ENDED_NOTIFICATION = @"LevelEndedNotification";
         
         IGAppDelegate *appDelegate = (IGAppDelegate*)[[UIApplication sharedApplication] delegate];
         NSLog(@"Currently on level %ld", (unsigned long)appDelegate.currentLevel);
+        
+        self.sceneSetup = [IGGameManager sharedInstance].sceneSetup;
         
         //self.backgroundColor = [SKColor whiteColor];
         if (appDelegate.currentLevel < 5) {
@@ -103,7 +106,7 @@ NSString *LEVEL_ENDED_NOTIFICATION = @"LevelEndedNotification";
     SKSpriteNode *brickPileBackground = [SKSpriteNode spriteNodeWithImageNamed:@"art.scnassets/brickPile.jpg"];
     brickPileBackground.position = CGPointMake(self.size.width / 2, self.size.height / 2);
     brickPileBackground.zPosition = -1;
-    [brickPileBackground setScale:1.2f]; //iPhone 6: 0.8, 5: 0.7, 4: 0.6
+    [brickPileBackground setScale:self.sceneSetup.firstSceneBackgroundScalingFactor];
     
     [self addChild:brickPileBackground];
 }
@@ -134,6 +137,7 @@ NSString *LEVEL_ENDED_NOTIFICATION = @"LevelEndedNotification";
     self.ball.physicsBody.linearDamping = 0;
     self.ball.physicsBody.restitution = 1.0f;
     self.ball.physicsBody.categoryBitMask = BALL_CATEGORY;
+    [self.ball setScale:self.sceneSetup.ballScalingFactor];
     
     //alert me when ball taouches either brick, paddle, bottom (invisible) edge or side cannon ball, etc...
     self.ball.physicsBody.contactTestBitMask = BRICK_CATEGORY | PADDLE_CATEGORY | BOTTOM_EDGE_CATEGORY | LIGHTNING_TRIGGER_EDGE | EDGE_CATEGORY | SIDE_CANNON_BALL_CATEGORY;
@@ -150,6 +154,7 @@ NSString *LEVEL_ENDED_NOTIFICATION = @"LevelEndedNotification";
     CGFloat horizontalPull = [self randomFloatBetween:8.0 and:14.0];
     NSLog(@"Horizontal pull will be %f", horizontalPull);
     CGFloat downwardPull = (appDelegate.currentLevel < 3) ? -5.0f : -12.0f; //faster ball from level 3
+    downwardPull = downwardPull * self.sceneSetup.ballSpeedScalingFactor;
     
     [self.ball.physicsBody applyImpulse:CGVectorMake(horizontalPull, downwardPull)];
 }
@@ -300,6 +305,7 @@ NSString *LEVEL_ENDED_NOTIFICATION = @"LevelEndedNotification";
     self.paddle.physicsBody = [SKPhysicsBody bodyWithRectangleOfSize:self.paddle.frame.size];
     self.paddle.physicsBody.dynamic = NO;
     self.paddle.physicsBody.categoryBitMask = PADDLE_CATEGORY;
+    [self.paddle setScale:self.sceneSetup.paddleScalingFactor];
     
     [self addChild:self.paddle];
 }
@@ -315,12 +321,12 @@ NSString *LEVEL_ENDED_NOTIFICATION = @"LevelEndedNotification";
     {
         for (int i = 0; i < 4; i++)
         {
-            SKSpriteNode *brick = [SKSpriteNode spriteNodeWithImageNamed:@"art.scnassets/redBrick"];
+            SKSpriteNode *brick = [SKSpriteNode spriteNodeWithImageNamed:self.sceneSetup.brickImageName];
             brick.physicsBody = [SKPhysicsBody bodyWithRectangleOfSize:brick.frame.size];
             brick.physicsBody.dynamic = NO;
             brick.physicsBody.categoryBitMask = BRICK_CATEGORY;
-        
-            int yPos = size.height - (30 * (k + 1) + (verticalSpacer * k));
+            
+            int yPos = size.height - (brick.frame.size.height * (k + 1) + (verticalSpacer * k));
             //NSLog(@"Brick y pos is %d with height %f", yPos, size.height);
             
             int xPos = size.width/5 * (i + 1);
@@ -529,6 +535,11 @@ NSString *LEVEL_ENDED_NOTIFICATION = @"LevelEndedNotification";
     //[self removeAllChildren];
     [self.view removeFromSuperview];
     [self removeFromParent];
+}
+
+-(id) retrieveSceneSetup
+{
+    return self.sceneSetup;
 }
 
 @end

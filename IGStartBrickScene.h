@@ -29,4 +29,6 @@ extern NSString *LEVEL_ENDED_NOTIFICATION;
 @property (nonatomic, strong) SKSpriteNode *ball;
 @property (nonatomic, strong) SKNode *notTheBall;
 
+-(id) retrieveSceneSetup;
+
 @end

@@ -45,6 +45,7 @@
 		BC8EDEA91C5BCEAC00C1B89E /* ball_dark.png in Resources */ = {isa = PBXBuildFile; fileRef = BC8EDEA81C5BCEAC00C1B89E /* ball_dark.png */; };
 		BCFB96A11C61271C00D39D94 /* IGSeventhLevelScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFB96A01C61271C00D39D94 /* IGSeventhLevelScene.swift */; };
 		BCFDE4FC1C6D9A340048B0E6 /* ExplosionParticle.sks in Resources */ = {isa = PBXBuildFile; fileRef = BCFDE4FB1C6D9A340048B0E6 /* ExplosionParticle.sks */; };
+		BCFDE5011C6EDF310048B0E6 /* IGSceneSetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFDE5001C6EDF310048B0E6 /* IGSceneSetup.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -124,6 +125,7 @@
 		BC8EDEAA1C60618500C1B89E /* BreakBricks-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BreakBricks-Bridging-Header.h"; sourceTree = "<group>"; };
 		BCFB96A01C61271C00D39D94 /* IGSeventhLevelScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IGSeventhLevelScene.swift; sourceTree = "<group>"; };
 		BCFDE4FB1C6D9A340048B0E6 /* ExplosionParticle.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = ExplosionParticle.sks; sourceTree = "<group>"; };
+		BCFDE5001C6EDF310048B0E6 /* IGSceneSetup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IGSceneSetup.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -185,27 +187,9 @@
 				BC6A84C41C3C683600CB8887 /* Assets.xcassets */,
 				BC6A84C61C3C683600CB8887 /* LaunchScreen.storyboard */,
 				BC6A84C91C3C683600CB8887 /* Info.plist */,
-				BC363F441C51E80B009D7A71 /* IGStartViewController.h */,
-				BC363F451C51E80B009D7A71 /* IGStartViewController.m */,
-				BC662C6F1C43794200571CCC /* IGPlayerViewController.h */,
-				BC662C701C43794200571CCC /* IGPlayerViewController.m */,
-				BC363F471C51ED7B009D7A71 /* IGLeaderBoardViewController.h */,
-				BC363F481C51ED7B009D7A71 /* IGLeaderBoardViewController.m */,
-				BC8B528D1C57163800B96688 /* IGPlayer.h */,
-				BC8B528E1C57163800B96688 /* IGPlayer.m */,
-				BC6A84BE1C3C683500CB8887 /* IGGameViewController.h */,
-				BC6A84BF1C3C683500CB8887 /* IGGameViewController.m */,
-				BC6A84FB1C3C71B500CB8887 /* IGStartBrickScene.h */,
-				BC6A84FC1C3C71B500CB8887 /* IGStartBrickScene.m */,
-				BC00A3C01C3DABA60035CFF8 /* IGGameOverScene.h */,
-				BC00A3C11C3DABA60035CFF8 /* IGGameOverScene.m */,
-				BC00A3C31C3DF4040035CFF8 /* IGNextLevelScene.h */,
-				BC00A3C41C3DF4050035CFF8 /* IGNextLevelScene.m */,
-				BC8B52901C57331000B96688 /* IGFifthLevelScene.h */,
-				BC8B52911C57331000B96688 /* IGFifthLevelScene.m */,
-				BC62E04C1C5B3350007A706E /* IGSixthLevelScene.h */,
-				BC62E04D1C5B3350007A706E /* IGSixthLevelScene.m */,
-				BCFB96A01C61271C00D39D94 /* IGSeventhLevelScene.swift */,
+				BCFDE4FE1C6EDDDE0048B0E6 /* ViewControllers */,
+				BCFDE4FF1C6EDE1B0048B0E6 /* Model */,
+				BCFDE4FD1C6ED8620048B0E6 /* Scenes */,
 				BC6A84B61C3C683500CB8887 /* Supporting Files */,
 				BC6A84F81C3C6FC600CB8887 /* IGMainBrickScene.sks */,
 				BC8EDEAA1C60618500C1B89E /* BreakBricks-Bridging-Header.h */,
@@ -270,6 +254,49 @@
 				BCFDE4FB1C6D9A340048B0E6 /* ExplosionParticle.sks */,
 			);
 			name = Particles;
+			sourceTree = "<group>";
+		};
+		BCFDE4FD1C6ED8620048B0E6 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				BC6A84FB1C3C71B500CB8887 /* IGStartBrickScene.h */,
+				BC6A84FC1C3C71B500CB8887 /* IGStartBrickScene.m */,
+				BC00A3C01C3DABA60035CFF8 /* IGGameOverScene.h */,
+				BC00A3C11C3DABA60035CFF8 /* IGGameOverScene.m */,
+				BC00A3C31C3DF4040035CFF8 /* IGNextLevelScene.h */,
+				BC00A3C41C3DF4050035CFF8 /* IGNextLevelScene.m */,
+				BC8B52901C57331000B96688 /* IGFifthLevelScene.h */,
+				BC8B52911C57331000B96688 /* IGFifthLevelScene.m */,
+				BC62E04C1C5B3350007A706E /* IGSixthLevelScene.h */,
+				BC62E04D1C5B3350007A706E /* IGSixthLevelScene.m */,
+				BCFB96A01C61271C00D39D94 /* IGSeventhLevelScene.swift */,
+			);
+			name = Scenes;
+			sourceTree = "<group>";
+		};
+		BCFDE4FE1C6EDDDE0048B0E6 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				BC363F441C51E80B009D7A71 /* IGStartViewController.h */,
+				BC363F451C51E80B009D7A71 /* IGStartViewController.m */,
+				BC662C6F1C43794200571CCC /* IGPlayerViewController.h */,
+				BC662C701C43794200571CCC /* IGPlayerViewController.m */,
+				BC363F471C51ED7B009D7A71 /* IGLeaderBoardViewController.h */,
+				BC363F481C51ED7B009D7A71 /* IGLeaderBoardViewController.m */,
+				BC6A84BE1C3C683500CB8887 /* IGGameViewController.h */,
+				BC6A84BF1C3C683500CB8887 /* IGGameViewController.m */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		BCFDE4FF1C6EDE1B0048B0E6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				BC8B528D1C57163800B96688 /* IGPlayer.h */,
+				BC8B528E1C57163800B96688 /* IGPlayer.m */,
+				BCFDE5001C6EDF310048B0E6 /* IGSceneSetup.swift */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -436,6 +463,7 @@
 				BC62E04E1C5B3350007A706E /* IGSixthLevelScene.m in Sources */,
 				BC00A3C51C3DF4050035CFF8 /* IGNextLevelScene.m in Sources */,
 				BC6A84B81C3C683500CB8887 /* main.m in Sources */,
+				BCFDE5011C6EDF310048B0E6 /* IGSceneSetup.swift in Sources */,
 				BC363F461C51E80B009D7A71 /* IGStartViewController.m in Sources */,
 				BC662C711C43794300571CCC /* IGPlayerViewController.m in Sources */,
 			);
