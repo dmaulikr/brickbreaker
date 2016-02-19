@@ -11,7 +11,7 @@
 #import "IGAppDelegate.h"
 #import "IGPlayerViewController.h"
 #import "IGFifthLevelScene.h"
-#import "IGSixthLevelScene.h"
+//#import "IGSixthLevelScene.h"
 
 #import "BreakBricks-Swift.h"
 
@@ -74,7 +74,7 @@
 {
     IGAppDelegate *appDelegate = (IGAppDelegate*)[[UIApplication sharedApplication] delegate];
     
-    NSLog(@"Game over will choose next scene based on current level %ld", appDelegate.currentLevel);
+    NSLog(@"Game over will choose next scene based on current level %ld", (long)appDelegate.currentLevel);
     
     SKScene *gameScene;
     
@@ -89,7 +89,7 @@
             gameScene = [IGFifthLevelScene sceneWithSize:self.size];
             break;
         case 6:
-            gameScene = [IGSixthLevelScene sceneWithSize:self.size];
+            gameScene = [IG6LevelScene sceneWithSize:self.size];
             break;
         case 7:
             gameScene = [IGSeventhLevelScene sceneWithSize:self.size];

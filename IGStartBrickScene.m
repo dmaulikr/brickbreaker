@@ -12,10 +12,10 @@
 #import "IGAppDelegate.h"
 #import "IGPlayerViewController.h"
 #import <AVFoundation/AVFoundation.h>
-#import "IGSixthLevelScene.h"
+//#import "IGSixthLevelScene.h"
 #import "IGGameManager.h"
 
-#import "BreakBricks-Swift.h"
+//#import "BreakBricks-Swift.h"
 
 @interface IGStartBrickScene ()
 
@@ -140,7 +140,7 @@ NSString *LEVEL_ENDED_NOTIFICATION = @"LevelEndedNotification";
     [self.ball setScale:self.sceneSetup.ballScalingFactor];
     
     //alert me when ball taouches either brick, paddle, bottom (invisible) edge or side cannon ball, etc...
-    self.ball.physicsBody.contactTestBitMask = BRICK_CATEGORY | PADDLE_CATEGORY | BOTTOM_EDGE_CATEGORY | LIGHTNING_TRIGGER_EDGE | EDGE_CATEGORY | SIDE_CANNON_BALL_CATEGORY;
+    self.ball.physicsBody.contactTestBitMask = BRICK_CATEGORY | PADDLE_CATEGORY | BOTTOM_EDGE_CATEGORY | 128 | EDGE_CATEGORY | SIDE_CANNON_BALL_CATEGORY;
     
     //collisionBitMask - decides which object bounce off of; by default everything colides with every other physics body
     self.ball.physicsBody.collisionBitMask = EDGE_CATEGORY | BRICK_CATEGORY | PADDLE_CATEGORY | SIDE_CANNON_BALL_CATEGORY; //result - ball goes right through the clouds
