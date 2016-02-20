@@ -2,7 +2,7 @@
 //  BreakBricksTests.m
 //  BreakBricksTests
 //
-//  Created by Joanna Rosiak on 1/5/16.
+//  Created by Rich Rosiak on 1/5/16.
 //  Copyright © 2016 Rich Rosiak. All rights reserved.
 //
 

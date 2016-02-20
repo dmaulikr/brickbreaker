@@ -45,6 +45,7 @@
 		BC8EDEA91C5BCEAC00C1B89E /* ball_dark.png in Resources */ = {isa = PBXBuildFile; fileRef = BC8EDEA81C5BCEAC00C1B89E /* ball_dark.png */; };
 		BCBB1A471C6FD9E6000A1712 /* IG6LevelScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBB1A461C6FD9E5000A1712 /* IG6LevelScene.swift */; };
 		BCBB1A491C6FE944000A1712 /* IGGameManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBB1A481C6FE944000A1712 /* IGGameManager.swift */; };
+		BCC2C4391C77E46C0090250C /* IG5LevelScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC2C4381C77E46C0090250C /* IG5LevelScene.swift */; };
 		BCFB96A11C61271C00D39D94 /* IGSeventhLevelScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFB96A01C61271C00D39D94 /* IGSeventhLevelScene.swift */; };
 		BCFDE4FC1C6D9A340048B0E6 /* ExplosionParticle.sks in Resources */ = {isa = PBXBuildFile; fileRef = BCFDE4FB1C6D9A340048B0E6 /* ExplosionParticle.sks */; };
 		BCFDE5011C6EDF310048B0E6 /* IGSceneSetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFDE5001C6EDF310048B0E6 /* IGSceneSetup.swift */; };
@@ -127,6 +128,7 @@
 		BC8EDEAA1C60618500C1B89E /* BreakBricks-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BreakBricks-Bridging-Header.h"; sourceTree = "<group>"; };
 		BCBB1A461C6FD9E5000A1712 /* IG6LevelScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IG6LevelScene.swift; sourceTree = "<group>"; };
 		BCBB1A481C6FE944000A1712 /* IGGameManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IGGameManager.swift; sourceTree = "<group>"; };
+		BCC2C4381C77E46C0090250C /* IG5LevelScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IG5LevelScene.swift; sourceTree = "<group>"; };
 		BCFB96A01C61271C00D39D94 /* IGSeventhLevelScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IGSeventhLevelScene.swift; sourceTree = "<group>"; };
 		BCFDE4FB1C6D9A340048B0E6 /* ExplosionParticle.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = ExplosionParticle.sks; sourceTree = "<group>"; };
 		BCFDE5001C6EDF310048B0E6 /* IGSceneSetup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IGSceneSetup.swift; sourceTree = "<group>"; };
@@ -272,6 +274,7 @@
 				BC00A3C41C3DF4050035CFF8 /* IGNextLevelScene.m */,
 				BC8B52901C57331000B96688 /* IGFifthLevelScene.h */,
 				BC8B52911C57331000B96688 /* IGFifthLevelScene.m */,
+				BCC2C4381C77E46C0090250C /* IG5LevelScene.swift */,
 				BC62E04C1C5B3350007A706E /* IGSixthLevelScene.h */,
 				BC62E04D1C5B3350007A706E /* IGSixthLevelScene.m */,
 				BCBB1A461C6FD9E5000A1712 /* IG6LevelScene.swift */,
@@ -468,6 +471,7 @@
 				BC6A84C01C3C683500CB8887 /* IGGameViewController.m in Sources */,
 				BC62E04E1C5B3350007A706E /* IGSixthLevelScene.m in Sources */,
 				BCBB1A471C6FD9E6000A1712 /* IG6LevelScene.swift in Sources */,
+				BCC2C4391C77E46C0090250C /* IG5LevelScene.swift in Sources */,
 				BC00A3C51C3DF4050035CFF8 /* IGNextLevelScene.m in Sources */,
 				BC6A84B81C3C683500CB8887 /* main.m in Sources */,
 				BCFDE5011C6EDF310048B0E6 /* IGSceneSetup.swift in Sources */,

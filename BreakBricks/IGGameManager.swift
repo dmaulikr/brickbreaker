@@ -2,7 +2,7 @@
 //  IGGameManager.swift
 //  BreakBricks
 //
-//  Created by Joanna Rosiak on 2/13/16.
+//  Created by Rich Rosiak on 2/13/16.
 //  Copyright © 2016 Rich Rosiak. All rights reserved.
 //
 
