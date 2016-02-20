@@ -67,7 +67,7 @@ NSString *LEVEL_ENDED_NOTIFICATION = @"LevelEndedNotification";
         IGAppDelegate *appDelegate = (IGAppDelegate*)[[UIApplication sharedApplication] delegate];
         NSLog(@"Currently on level %ld", (unsigned long)appDelegate.currentLevel);
         
-        self.sceneSetup = [IGGameManager sharedInstance].sceneSetup;
+        self.sceneSetup = [IGGameManager2 sharedInstance].sceneSetup2;
         
         //self.backgroundColor = [SKColor whiteColor];
         if (appDelegate.currentLevel < 5) {

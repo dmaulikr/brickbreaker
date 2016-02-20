@@ -71,16 +71,17 @@ This is a singleton class
     func setupSceneForFrameHeight(frameHeight : NSInteger) {
         
         print("The frame heght is ", frameHeight)
+        self.sceneSetup2 = IGSceneSetup()
         
         switch frameHeight {
             
         case 480: //iPhone 4 or less
             self.sceneSetup2.cloudScalingFactor = 0.4
             self.sceneSetup2.firstSceneBackgroundScalingFactor = 0.6
-            self.sceneSetup2.cloudyBackgroundScalingFactor = 0.6
+            self.sceneSetup2.cloudyBackgroundScalingFactor = 0.7
             self.sceneSetup2.brickImageName = "art.scnassets/redBrick"
             self.sceneSetup2.ballSpeedScalingFactor = 0.7
-            self.sceneSetup2.tankBackScalingFactor = 0.4
+            self.sceneSetup2.tankBackScalingFactor = 0.5
             break;
         case 568: //iPhone 5
             self.sceneSetup2.cloudScalingFactor = 0.5

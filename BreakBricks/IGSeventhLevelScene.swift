@@ -27,7 +27,7 @@ import SpriteKit
         
         super.init(size: size)
         
-        self.sceneSetup = self.retrieveSceneSetup() as! IGSceneSetup //workaround for cyclic dependency with IGGameManager
+        self.sceneSetup = IGGameManager2.sharedInstance.sceneSetup2 //self.retrieveSceneSetup() as! IGSceneSetup //workaround for cyclic dependency with IGGameManager
         
         self.playCannonSound = SKAction.playSoundFileNamed("firecannon.wav", waitForCompletion: false)
         

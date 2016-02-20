@@ -19,7 +19,7 @@ const uint32_t LIGHTNING_TRIGGER_EDGE = 0x1 << 7;  //000000000000000000000000100
 let THUNDER_SOUND_FILE_NAME = "art.scnassets/thunder.wav"
 
 
-@objc class IG6LevelScene : IGFifthLevelScene {
+@objc class IG6LevelScene : IG5LevelScene {
     
     var background : SKSpriteNode?
     var originalBckgColor : SKColor
@@ -85,7 +85,7 @@ let THUNDER_SOUND_FILE_NAME = "art.scnassets/thunder.wav"
         let rainParticlePath : String = NSBundle.mainBundle().pathForResource("RainParticle", ofType: "sks")!
         let rainParticle : SKEmitterNode = NSKeyedUnarchiver.unarchiveObjectWithFile(rainParticlePath) as! SKEmitterNode
     
-        let lastCloud : SKSpriteNode = self.clouds.lastObject as! SKSpriteNode
+        let lastCloud : SKSpriteNode = self.clouds!.lastObject as! SKSpriteNode
         rainParticle.targetNode = lastCloud;
         rainParticle.position = CGPointMake(0, -lastCloud.frame.size.height / 4); //pos. with respect to lastCloud
     

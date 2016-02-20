@@ -9,7 +9,7 @@
 #import "IGGameViewController.h"
 #import "IGStartBrickScene.h"
 #import "IGAppDelegate.h"
-#import "IGFifthLevelScene.h"
+//#import "IGFifthLevelScene.h"
 #import "IGPlayerViewController.h"
 //#import "IGSixthLevelScene.h"
 #import "IGGameManager.h"
@@ -32,9 +32,9 @@
     }
     
     NSLog(@"Will set up scene for device height: %f", self.view.frame.size.height);
-    [[IGGameManager sharedInstance] setupSceneForFrameHeight:self.view.frame.size.height];
+    [[IGGameManager2 sharedInstance] setupSceneForFrameHeight:self.view.frame.size.height];
     
-    appDelegate.currentLevel = 6; //debugging - to be removed when done
+    appDelegate.currentLevel = 5; //debugging - to be removed when done
     //[[NSUserDefaults standardUserDefaults] setInteger:3 forKey:[NSString stringWithFormat:@"%@%@", appDelegate.currentPlayer, PLAYER_LIVES_KEY_SUFFIX]]; //for debugging - to be removed when done
 
     // create a new scene
@@ -111,7 +111,7 @@
             gameScene = [IGStartBrickScene sceneWithSize:skView.bounds.size];
             break;
         case 5:
-            gameScene = [IGFifthLevelScene sceneWithSize:skView.bounds.size];
+            gameScene = [IG5LevelScene sceneWithSize:skView.bounds.size];
             break;
         case 6:
             gameScene = [IG6LevelScene sceneWithSize:skView.bounds.size];
