@@ -9,7 +9,7 @@
 #import "IGNextLevelScene.h"
 #import "IGStartBrickScene.h"
 #import "IGAppDelegate.h"
-#import "IGFifthLevelScene.h"
+//#import "IGFifthLevelScene.h"
 //#import "IGSixthLevelScene.h"
 #import "IGPlayerViewController.h"
 
@@ -77,7 +77,7 @@
             gameScene = [IGStartBrickScene sceneWithSize:self.size];
             break;
         case 5:
-            gameScene = [IGFifthLevelScene sceneWithSize:self.size];
+            gameScene = [IG5LevelScene sceneWithSize:self.size];
             break;
         case 6:
             gameScene = [IG6LevelScene sceneWithSize:self.size];
