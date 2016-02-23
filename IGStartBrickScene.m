@@ -8,11 +8,9 @@
 
 #import "IGStartBrickScene.h"
 #import "IGGameOverScene.h"
-#import "IGNextLevelScene.h"
 #import "IGAppDelegate.h"
 #import "IGPlayerViewController.h"
 #import <AVFoundation/AVFoundation.h>
-//#import "IGSixthLevelScene.h"
 #import "IGGameManager.h"
 
 //#import "BreakBricks-Swift.h"
@@ -248,7 +246,7 @@ NSString *LEVEL_ENDED_NOTIFICATION = @"LevelEndedNotification";
         [self removeObservers];
         [self.explosionParticle removeFromParent];
         
-        IGNextLevelScene *success = [IGNextLevelScene sceneWithSize:self.size];
+        AdvanceToNextLevelScene *success = [AdvanceToNextLevelScene sceneWithSize:self.size];
         [self.view presentScene:success transition:[SKTransition doorsOpenHorizontalWithDuration:1.0f]];
     }
 }

@@ -11,7 +11,6 @@
 		BC00A3BE1C3DA2CA0035CFF8 /* brickhit.caf in Resources */ = {isa = PBXBuildFile; fileRef = BC00A3BB1C3D9F600035CFF8 /* brickhit.caf */; };
 		BC00A3BF1C3DA2CA0035CFF8 /* gameover.caf in Resources */ = {isa = PBXBuildFile; fileRef = BC00A3BC1C3D9F600035CFF8 /* gameover.caf */; };
 		BC00A3C21C3DABA60035CFF8 /* IGGameOverScene.m in Sources */ = {isa = PBXBuildFile; fileRef = BC00A3C11C3DABA60035CFF8 /* IGGameOverScene.m */; };
-		BC00A3C51C3DF4050035CFF8 /* IGNextLevelScene.m in Sources */ = {isa = PBXBuildFile; fileRef = BC00A3C41C3DF4050035CFF8 /* IGNextLevelScene.m */; };
 		BC00A3C71C3E08350035CFF8 /* levelSuccess.wav in Resources */ = {isa = PBXBuildFile; fileRef = BC00A3C61C3E08350035CFF8 /* levelSuccess.wav */; };
 		BC3308471C3F885D0096F51C /* cannonball.png in Resources */ = {isa = PBXBuildFile; fileRef = BC3308461C3F885D0096F51C /* cannonball.png */; };
 		BC363F461C51E80B009D7A71 /* IGStartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC363F451C51E80B009D7A71 /* IGStartViewController.m */; };
@@ -19,7 +18,6 @@
 		BC62E0471C5B2A7C007A706E /* IGGameManager.m in Sources */ = {isa = PBXBuildFile; fileRef = BC62E0461C5B2A7C007A706E /* IGGameManager.m */; };
 		BC62E04A1C5B313A007A706E /* RainParticle.sks in Resources */ = {isa = PBXBuildFile; fileRef = BC62E0481C5B313A007A706E /* RainParticle.sks */; };
 		BC62E04B1C5B313A007A706E /* spark.png in Resources */ = {isa = PBXBuildFile; fileRef = BC62E0491C5B313A007A706E /* spark.png */; };
-		BC62E04E1C5B3350007A706E /* IGSixthLevelScene.m in Sources */ = {isa = PBXBuildFile; fileRef = BC62E04D1C5B3350007A706E /* IGSixthLevelScene.m */; };
 		BC662C6B1C420CA000571CCC /* brickbreaker_launch_sm.png in Resources */ = {isa = PBXBuildFile; fileRef = BC662C6A1C420CA000571CCC /* brickbreaker_launch_sm.png */; };
 		BC662C711C43794300571CCC /* IGPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BC662C701C43794200571CCC /* IGPlayerViewController.m */; };
 		BC6A84B81C3C683500CB8887 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BC6A84B71C3C683500CB8887 /* main.m */; };
@@ -41,11 +39,11 @@
 		BC6A84FD1C3C71B500CB8887 /* IGStartBrickScene.m in Sources */ = {isa = PBXBuildFile; fileRef = BC6A84FC1C3C71B500CB8887 /* IGStartBrickScene.m */; };
 		BC79ED201C3FE7E100B28F1B /* firecannon.wav in Resources */ = {isa = PBXBuildFile; fileRef = BC79ED1F1C3FE7E100B28F1B /* firecannon.wav */; };
 		BC8B528F1C57163800B96688 /* IGPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = BC8B528E1C57163800B96688 /* IGPlayer.m */; };
-		BC8B52921C57331000B96688 /* IGFifthLevelScene.m in Sources */ = {isa = PBXBuildFile; fileRef = BC8B52911C57331000B96688 /* IGFifthLevelScene.m */; };
 		BC8EDEA91C5BCEAC00C1B89E /* ball_dark.png in Resources */ = {isa = PBXBuildFile; fileRef = BC8EDEA81C5BCEAC00C1B89E /* ball_dark.png */; };
 		BCBB1A471C6FD9E6000A1712 /* IG6LevelScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBB1A461C6FD9E5000A1712 /* IG6LevelScene.swift */; };
 		BCBB1A491C6FE944000A1712 /* IGGameManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCBB1A481C6FE944000A1712 /* IGGameManager.swift */; };
 		BCC2C4391C77E46C0090250C /* IG5LevelScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCC2C4381C77E46C0090250C /* IG5LevelScene.swift */; };
+		BCD22A901C791D27009DEF23 /* IGAdvanceToNextLevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCD22A8F1C791D27009DEF23 /* IGAdvanceToNextLevel.swift */; };
 		BCFB96A11C61271C00D39D94 /* IGSeventhLevelScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFB96A01C61271C00D39D94 /* IGSeventhLevelScene.swift */; };
 		BCFDE4FC1C6D9A340048B0E6 /* ExplosionParticle.sks in Resources */ = {isa = PBXBuildFile; fileRef = BCFDE4FB1C6D9A340048B0E6 /* ExplosionParticle.sks */; };
 		BCFDE5011C6EDF310048B0E6 /* IGSceneSetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCFDE5001C6EDF310048B0E6 /* IGSceneSetup.swift */; };
@@ -74,8 +72,6 @@
 		BC00A3BC1C3D9F600035CFF8 /* gameover.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = gameover.caf; sourceTree = "<group>"; };
 		BC00A3C01C3DABA60035CFF8 /* IGGameOverScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IGGameOverScene.h; sourceTree = "<group>"; };
 		BC00A3C11C3DABA60035CFF8 /* IGGameOverScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IGGameOverScene.m; sourceTree = "<group>"; };
-		BC00A3C31C3DF4040035CFF8 /* IGNextLevelScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IGNextLevelScene.h; sourceTree = "<group>"; };
-		BC00A3C41C3DF4050035CFF8 /* IGNextLevelScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IGNextLevelScene.m; sourceTree = "<group>"; };
 		BC00A3C61C3E08350035CFF8 /* levelSuccess.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = levelSuccess.wav; sourceTree = "<group>"; };
 		BC3308461C3F885D0096F51C /* cannonball.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cannonball.png; sourceTree = "<group>"; };
 		BC363F441C51E80B009D7A71 /* IGStartViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IGStartViewController.h; sourceTree = "<group>"; };
@@ -86,8 +82,6 @@
 		BC62E0461C5B2A7C007A706E /* IGGameManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IGGameManager.m; sourceTree = "<group>"; };
 		BC62E0481C5B313A007A706E /* RainParticle.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = RainParticle.sks; sourceTree = "<group>"; };
 		BC62E0491C5B313A007A706E /* spark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spark.png; sourceTree = "<group>"; };
-		BC62E04C1C5B3350007A706E /* IGSixthLevelScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IGSixthLevelScene.h; sourceTree = "<group>"; };
-		BC62E04D1C5B3350007A706E /* IGSixthLevelScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IGSixthLevelScene.m; sourceTree = "<group>"; };
 		BC62E04F1C5B39CA007A706E /* RainParticle.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = RainParticle.sks; sourceTree = "<group>"; };
 		BC62E0501C5B39CA007A706E /* spark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = spark.png; sourceTree = "<group>"; };
 		BC662C6A1C420CA000571CCC /* brickbreaker_launch_sm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = brickbreaker_launch_sm.png; path = art.scnassets/brickbreaker_launch_sm.png; sourceTree = "<group>"; };
@@ -122,13 +116,12 @@
 		BC79ED1F1C3FE7E100B28F1B /* firecannon.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = firecannon.wav; sourceTree = "<group>"; };
 		BC8B528D1C57163800B96688 /* IGPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IGPlayer.h; sourceTree = "<group>"; };
 		BC8B528E1C57163800B96688 /* IGPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IGPlayer.m; sourceTree = "<group>"; };
-		BC8B52901C57331000B96688 /* IGFifthLevelScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IGFifthLevelScene.h; sourceTree = "<group>"; };
-		BC8B52911C57331000B96688 /* IGFifthLevelScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IGFifthLevelScene.m; sourceTree = "<group>"; };
 		BC8EDEA81C5BCEAC00C1B89E /* ball_dark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ball_dark.png; sourceTree = "<group>"; };
 		BC8EDEAA1C60618500C1B89E /* BreakBricks-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BreakBricks-Bridging-Header.h"; sourceTree = "<group>"; };
 		BCBB1A461C6FD9E5000A1712 /* IG6LevelScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IG6LevelScene.swift; sourceTree = "<group>"; };
 		BCBB1A481C6FE944000A1712 /* IGGameManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IGGameManager.swift; sourceTree = "<group>"; };
 		BCC2C4381C77E46C0090250C /* IG5LevelScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IG5LevelScene.swift; sourceTree = "<group>"; };
+		BCD22A8F1C791D27009DEF23 /* IGAdvanceToNextLevel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IGAdvanceToNextLevel.swift; sourceTree = "<group>"; };
 		BCFB96A01C61271C00D39D94 /* IGSeventhLevelScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IGSeventhLevelScene.swift; sourceTree = "<group>"; };
 		BCFDE4FB1C6D9A340048B0E6 /* ExplosionParticle.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = ExplosionParticle.sks; sourceTree = "<group>"; };
 		BCFDE5001C6EDF310048B0E6 /* IGSceneSetup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IGSceneSetup.swift; sourceTree = "<group>"; };
@@ -270,13 +263,8 @@
 				BC6A84FC1C3C71B500CB8887 /* IGStartBrickScene.m */,
 				BC00A3C01C3DABA60035CFF8 /* IGGameOverScene.h */,
 				BC00A3C11C3DABA60035CFF8 /* IGGameOverScene.m */,
-				BC00A3C31C3DF4040035CFF8 /* IGNextLevelScene.h */,
-				BC00A3C41C3DF4050035CFF8 /* IGNextLevelScene.m */,
-				BC8B52901C57331000B96688 /* IGFifthLevelScene.h */,
-				BC8B52911C57331000B96688 /* IGFifthLevelScene.m */,
+				BCD22A8F1C791D27009DEF23 /* IGAdvanceToNextLevel.swift */,
 				BCC2C4381C77E46C0090250C /* IG5LevelScene.swift */,
-				BC62E04C1C5B3350007A706E /* IGSixthLevelScene.h */,
-				BC62E04D1C5B3350007A706E /* IGSixthLevelScene.m */,
 				BCBB1A461C6FD9E5000A1712 /* IG6LevelScene.swift */,
 				BCFB96A01C61271C00D39D94 /* IGSeventhLevelScene.swift */,
 			);
@@ -462,17 +450,15 @@
 			files = (
 				BC363F491C51ED7B009D7A71 /* IGLeaderBoardViewController.m in Sources */,
 				BCFB96A11C61271C00D39D94 /* IGSeventhLevelScene.swift in Sources */,
-				BC8B52921C57331000B96688 /* IGFifthLevelScene.m in Sources */,
 				BC8B528F1C57163800B96688 /* IGPlayer.m in Sources */,
 				BC62E0471C5B2A7C007A706E /* IGGameManager.m in Sources */,
 				BC6A84BB1C3C683500CB8887 /* IGAppDelegate.m in Sources */,
 				BC6A84FD1C3C71B500CB8887 /* IGStartBrickScene.m in Sources */,
 				BC00A3C21C3DABA60035CFF8 /* IGGameOverScene.m in Sources */,
 				BC6A84C01C3C683500CB8887 /* IGGameViewController.m in Sources */,
-				BC62E04E1C5B3350007A706E /* IGSixthLevelScene.m in Sources */,
 				BCBB1A471C6FD9E6000A1712 /* IG6LevelScene.swift in Sources */,
 				BCC2C4391C77E46C0090250C /* IG5LevelScene.swift in Sources */,
-				BC00A3C51C3DF4050035CFF8 /* IGNextLevelScene.m in Sources */,
+				BCD22A901C791D27009DEF23 /* IGAdvanceToNextLevel.swift in Sources */,
 				BC6A84B81C3C683500CB8887 /* main.m in Sources */,
 				BCFDE5011C6EDF310048B0E6 /* IGSceneSetup.swift in Sources */,
 				BCBB1A491C6FE944000A1712 /* IGGameManager.swift in Sources */,
